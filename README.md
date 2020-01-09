@@ -1,2 +1,2 @@
-# jacobspark.github.io
+# soobinjppark.github.io
 [Personal website](https://soobin.me/)
