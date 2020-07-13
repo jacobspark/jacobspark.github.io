@@ -1,39 +1,34 @@
-.bg-image {
+/* .bg-image {
     display: block;
     position: fixed;
-    background-image: url(Rain.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
     width: 100%;
     z-index: -10;
-}
+} */
 
-h1, h4, p { 
+h1, h5, p { 
     font-family: 'Open Sans', sans-serif; 
-    margin-bottom: 20px; 
-    font-weight : 400;
-    margin-bottom: 10px;
-    color: #fff;
+    font-weight : 200;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    opacity: 0;
 }
 
 h1 {
-    font-size: 50px;
+    margin-bottom: 20px; 
+}
+h5 {
+    margin-bottom: 30px; 
 }
 
-h4 {
-    font-size: 22px;
-    font-weight: 50;
-}
 
-span:hover {
-    font-size: 0;
-}
-
-span:hover:after {
-    content: attr(data-hover);
-    font-size: 50px;
+a {
+    opacity: 0;
+    margin: 0px 10px 0px 10px;
 }
 
 hr {
@@ -42,11 +37,9 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     width: 225px;
+    opacity: 1;
 }
 
-ul {
-    transform: translateX(-1.1em) translateY(0.5em);
-}
 
 .header {
     display: flex;
@@ -55,94 +48,8 @@ ul {
     align-items: center;
 }
 
-.layer {
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    opacity: 0.38;
-    z-index: 0;
-}
-
 .container {
     z-index: 2;
-}
-
-.btn {
-    display: inline-block;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: #f1f1f1;
-    border-radius: 35%;
-    margin: 10px;
-    box-shadow: 0 3px 10px -2px #000;
-    overflow: hidden;
-    border-color: #820312;
-}
-
-.btn i {
-    line-height: 40px;
-    font-size: 24px;
-    transition: 0.2s linear;
-    color: #820312;
-}
-
-.btn:hover i {
-    transform: scale(1.25);
-    color: white;
-}
-.btn::before {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    background: #820312;
-    transform: rotate(45deg);
-    left: -110%;
-    top: 90%;
-}
-
-.btn:hover::before {
-    animation: effects 0.6s 1;
-    top: -10%;
-    left: -10%;
-}
-
-@keyframes effects {
-    0% {
-        top: -110%;
-        left: 90%;
-        background: #c0392b;
-    }
-    50% {
-        top: 10%;
-        left: -30%;
-    }
-    100% {
-        top: -10%;
-        left: -10%;
-        background: #820312;
-    }
-}
-
-a {
-    padding-left: 9.2px !important;
-}
-#file {
-    padding-left: 11px !important;
-}
-
-
-i {
-    color: white;
-    font-size: 30px;
-    padding: 3px 10px;
-    -webkit-transition-duration: 0.25s;
-    transition-duration: 0.25s;
-}
-i:hover {
-    color: #808080;
 }
 
 
